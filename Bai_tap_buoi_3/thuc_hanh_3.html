@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var money = parseInt(prompt("Số tiền tiết kiệm (triệu đồng)"))
+    var time = parseInt(prompt("Số năm để tiết kiệm (năm)"))
+    var interest_rate = "5%"
+    var money_1_nam = money * 5/100
+    var summoney = time*money_1_nam+money
+    
+    document.write("Money là " + money +" " + "(Triệu đồng)")
+    document.write("<br>")
+    document.write("Time là " + time + " " + "năm")
+    document.write("<br>")
+    document.write("Lãi suất hằng năm là" +" " + interest_rate)
+    document.write("<br>")
+    document.write("Sau 1 năm:" +" " + money_1_nam +" " + "(triệu đồng)")
+    document.write("<br>")
+    document.write("Số tiền sau khi hết hạn tiết kiệm:" + summoney + " " + "(triệu đồng)")
+</script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Khai báo, sử dụng biến và in ra màn hình</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = "Bài 1:";
+    let i = 1000000;
+    let f = 20.5;
+    let b = true;
+    let s = 'Hà Nội';
+
+    document.write(a);
+    document.write("<br>");
+    document.write('i = ' + i );
+    document.write("<br>");
+    document.write('f = ' + f);
+    document.write("<br>");
+    document.write('b = ' + b);
+    document.write("<br>");
+    document.write('s = ' + s);
+    document.write("<br>");
+    document.write("<br>");
+
+    let c = "Bài 2:";
+    let width = 20;
+    let height = 10;
+    let area = width * height;
+    
+    document.write(c);
+    document.write("<br>");
+    document.write('Area = ' + area);
+    document.write("<br>");
+    document.write("<br>");
+
+    let d = "Bài 3:";
+    let e = prompt("Nhập số a");
+    let g = prompt("Nhập số b");
+
+    if (e%g ==0) {
+        alert("a chia hết cho b")
+    } else {
+        alert("a không chia hết cho b")
+    };  
+    document.write(d);
+    document.write("<br>");
+    if (e%g ==0) {
+        document.write("a chia hết cho b")
+    } else {
+        document.write("a không chia hết cho b")
+    };
+</script>
