@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ $$$$$</title>
+    
+</head>
+<body>
+ <input type="text" id="giatridauvao">
+ <select name="" id="select_1">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select>
+<select name="" id="select_2">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="ChuyenDoi()">Chuyển đổi</button>
+</body>
+</html>
+<script>
+function ChuyenDoi() {
+    let dauvao = document.getElementById('giatridauvao').value;
+    let select_1 = document.getElementById('select_1').value;
+    let select_2 = document.getElementById('select_2').value;
+    if (select_1 == "a" && select_2 == "b") {
+        alert(dauvao/24000);
+    }
+    else if (select_1 == "b" && select_2 == "a") {
+        alert(dauvao*24000)
+    } else {
+        alert(dauvao)
+    }
+}
+</script>
