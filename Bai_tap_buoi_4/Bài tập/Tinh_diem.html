@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm Đại học khối D</title>
+</head>
+<body>
+    <h1>Tính Điểm Đại học khối D</h1>
+    <form action="">
+        Môn Toán:<input type="number" id="toan" placeholder="Nhập điểm toán"><br>
+        Môn Văn: <input type="number"  id="van" placeholder="Nhập điểm văn"><br>
+        Môn Anh: <input type="number" id="anh" placeholder="Nhập điểm anh"><br>
+        Khu vực: 
+        <select id="khuvuc">
+            <option value="KV1">KV1</option>
+            <option value="KV2NT">KV2-NT</option>
+            <option value="KV2">KV2</option>
+            <option value="KV3">KV3</option>
+        </select><br>
+        <button id="nhap" onclick="getStart()">Tính điểm</button><br>
+        <span id="error"></span>
+    </form>
+</body>
+    <script >
+        function getStart() {
+            var diemToan = parseInt(document.getElementById("toan"));
+            var diemVan = parseInt(document.getElementById("van"));
+            var diemAnh = parseInt(document.getElementById("anh"));
+            var khuVuc = parseFloat(document.getElementById("khuvuc"));
+            if (diemToan.value =="" || diemVan =="" || diemAnh =="" || khuVuc == "" ) {
+                error.innerHTML = "Bạn bị thiếu";
+            } else {
+                var toan = parseInt(diemToan.value);
+                var anh = parseInt(diemAnh.value);
+                var van = parseInt(diemVan.value);
+                var tong;
+                    tong = toan + van + anh;
+                
+                // alert("Tổng điểm: " + tong);
+                document.getElementById("error").innerHTML="Tổng điểm: " + tong;
+            }
+        }
+    </script>
+</html>
