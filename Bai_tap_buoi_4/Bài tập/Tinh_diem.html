@@ -14,32 +14,30 @@
         Môn Anh: <input type="number" id="anh" placeholder="Nhập điểm anh"><br>
         Khu vực: 
         <select id="khuvuc">
-            <option value="KV1">KV1</option>
-            <option value="KV2NT">KV2-NT</option>
-            <option value="KV2">KV2</option>
-            <option value="KV3">KV3</option>
+            <option value="0.75">KV1</option>
+            <option value="0.5">KV2-NT</option>
+            <option value="0.25">KV2</option>
+            <option value="0">KV3</option>
         </select><br>
-        <button id="nhap" onclick="getStart()">Tính điểm</button><br>
-        <span id="error"></span>
+        <input type="button" id="nhap" onclick="getStart()" value="Tính điểm"><br>
+        <p id="error"></p>
     </form>
 </body>
     <script >
         function getStart() {
-            var diemToan = parseInt(document.getElementById("toan"));
-            var diemVan = parseInt(document.getElementById("van"));
-            var diemAnh = parseInt(document.getElementById("anh"));
-            var khuVuc = parseFloat(document.getElementById("khuvuc"));
-            if (diemToan.value =="" || diemVan =="" || diemAnh =="" || khuVuc == "" ) {
+            var diemToan = parseInt(document.getElementById("toan").value);
+            var diemVan = parseInt(document.getElementById("van").value);
+            var diemAnh = parseInt(document.getElementById("anh").value);
+            var khuVuc = parseFloat(document.getElementById("khuvuc").value);
+            if (diemToan =="" || diemVan =="" || diemAnh =="" || khuVuc == "" ) {
                 error.innerHTML = "Bạn bị thiếu";
+            } else if (diemToan > 10 || diemVan >10 || diemAnh >10) {
+                error.innerHTML = "Bạn đã nhập sai điểm. Vui lòng nhập lại!!!!!";
             } else {
-                var toan = parseInt(diemToan.value);
-                var anh = parseInt(diemAnh.value);
-                var van = parseInt(diemVan.value);
                 var tong;
-                    tong = toan + van + anh;
-                
+                    tong = diemToan + diemVan + diemAnh +khuVuc ;
                 // alert("Tổng điểm: " + tong);
-                document.getElementById("error").innerHTML="Tổng điểm: " + tong;
+                error.innerHTML = "Tổng điểm: " + tong;
             }
         }
     </script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng lặp JS</title>
+</head>
+<body>
+<!-- <p>Bài 1: Viết chương trình hiển thị chuỗi “The number is N” 5 lần sử dụng vòng lặp for. Với N sẽ hiển thị từ 0 đến 5.</p>
+<p id="demo"></p> -->
+
+<p>Bài 2: Tính tổng các phần tử</p>
+<p id="demo2"></p>
+</body>
+<script>
+// let text ="";
+// let i;
+// for (i=0;i<5;i++) {
+//     text += "The number is " + i + '<br>'
+// }
+// demo.innerHTML = text
+
+let total = 0 ;
+let i=1;
+let number = prompt("Nhập số vòng muốn lặp");
+for (;i <= number;i+=1) {
+    total += i ;
+}
+demo2.innerHTML="Tổng = "+ total;
+</script>
+</html>

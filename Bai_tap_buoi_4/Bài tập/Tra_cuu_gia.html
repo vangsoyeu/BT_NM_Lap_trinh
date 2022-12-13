@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu giá hoa quả</title>
+</head>
+<body>
+    <h2>Giá Hoa Quả !!!!!</h2>
+    <form>
+        <input type="text" id="hoaqua" placeholder="Nhập Hoa quả bạn muốn tìm">
+        <input type="button" value="Xem giá" onclick="getGia()">
+        <p id="xuat"></p>
+    </form>
+</body>
+<script>
+function getGia() {
+    var hoaqua = document.getElementById("hoaqua").value;
+    if (hoaqua == 'Ổi' || hoaqua == 'ổi'|| hoaqua == "Dưa hấu" || hoaqua == "dưa hấu") {
+        xuat.innerHTML = "Giá là 20.000 VNĐ/kg";
+    } else if (hoaqua == 'Xoài' || hoaqua == 'xoài'|| hoaqua == "táo" || hoaqua == "Táo") {
+        xuat.innerHTML = "Giá là 30.000 VNĐ/kg";
+    } else if (hoaqua == 'Cam' || hoaqua == 'cam'|| hoaqua == "Chôm" || hoaqua == "chôm") {
+        xuat.innerHTML = "Giá là 40.000 VNĐ/kg";
+    } else if (hoaqua == 'Măng cụt' || hoaqua == 'măng cụt') {
+        xuat.innerHTML = "Giá là 50.000 VNĐ/kg";
+    } else if (hoaqua == '') {
+        xuat.innerHTML = "Xin hãy nhập tên hoa quả!!!";
+    } else {
+        xuat.innerHTML = "Chúng tôi k bán loại hoa quả này.Sorry!!!";
+    }
+}
+    </script>
+    
+</html>
