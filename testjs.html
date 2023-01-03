@@ -7,90 +7,81 @@
     <title>Test thôi ý mà ???????????????</title>
 </head>
 <body>
+    <!-- <div>
+        <div>
+            Mã SV:<input type="text" id="id">
+        </div>
+        <div>
+            Họ và tên:<input type="text" id="name">
+        </div>
+        <div>
+            Ngày sinh:<input type="text" id="age">
+        </div>
+        <div>
+            <button id="add" onclick="add()"> Add </button>
+        </div>
+        <table id="render">
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Chỉnh sửa</th>
+            </tr>
+        </table>
+    </div> -->
 
+
+<div>
+        <a href="#"><img src="./8666718_plus_circle_icon.png"></a>
+</div>
 </body>
-</html>
 <script>
-    // "IF_ELSE IF"
-    // let hour = prompt("Thời gian(giờ):");
-    // if (hour < 10) {
-    //      alert("Good morning");
-    // } else if (hour < 17) {
-    //     alert("Good afternoon")
-    // } else {
-    //     alert("Good night")
-    // }
+// var arr = [];
+// function add() {
+//     var id= document.getElementById('id').value;
+//     var name= document.getElementById('name').value;
+//     var age= document.getElementById('age').value;
 
-    // "Lồng IF"
-    // var a = prompt("Nhập số:")
-    // var b = prompt("Nhập số:")
-    // var c = prompt("Nhập số:")
-    // if (a==b) {
-    //     if (a==c) {
-    //         alert("all are equal")
-    //     } else{
-    //         alert("a and b are equal")
-    //     }
-    // } else {
-    //     if (a==c) {
-    //         alert("a and c are equal")
-    //     } else if (b==c) {
-    //         alert ("b and c equal")
-    //     } else {
-    //         alert("all are different")
-    //     }
-    // }
+//     var item = {
+//         Id:id, Name:name, Age:age
+//     }
+//     arr.push(item);
+// xuat();
+// }
 
-    // "switch:333"
-    // let opera = "+"
-    // let a = 6
-    // let b = 3
-    // switch (opera) {
-    //     case "+":
-    //         alert("a+b= " + (a+b));
-    //         break;
-    //     case "-":
-    //         alert("a-b= " + (a-b));
-    //         break;
-    //     case "*":
-    //         alert("a*b= " + (a*b))
-    //         break;
-    //         default:
-    //             alert("Không tính được!");
-    //             break;
-    // }
 
-    // "lồng switch ???????"
-    // var a = parseInt(prompt("Nhập số bất kì:"));
-    // var b = parseInt(prompt("Nhập số bất kì:"));
-    
-    // switch (a) {
-    //     case 900:
-    //         alert("a = " +a);
-    //     switch (b) {
-    //         case 100:
-    //             alert("b = " +b);
-    //     }
-    // }
-    
-    // "Toán tử 3 ngôi"
-    // let login = prompt("Nhập dữ liệu")
-    // let message = (login == 'Employee') ? 'Hello' :
-    //                     (login == 'Director') ? 'Greetings' :
-    //                             (login == '') ? 'No login' : '';
-    // alert(message)
+// function xuat() {
+//     var bang = `<tr>
+//                 <th>Mã sinh viên</th>
+//                 <th>Họ và tên</th>
+//                 <th>Ngày sinh</th>
+//                 <th>Chỉnh sửa</th>
+//             </tr>`
+//     for (let i = 0; i < arr.length; i++) {
+//         bang = `<tr>
+//                 <th>${arr[i].Id}</th>
+//                 <th>${arr[i].Name}</th>
+//                 <th>${arr[i].Age}</th>
+//                 <th><button onclick="deleteItem(${arr[i].Id})">Delete</button></th>
+//             </tr>`   
+//     }
+//     document.getElementById("render").innerHTML = bang;
+// }
 
-    // "switch test"
-    // var a = parseInt(prompt("Nhập số:"))
-    // switch (a) {
-    //     case 100 :
-    //         alert("Số cần tìm nhỏ hơn 100");
-    //         break;
-    //     case 500 :
-    //         alert("Số cần tìm nhỏ hơn 500");
-    //         break; 
-    //     default:
-    //         alert("Lỗi");
-    //         break;
-    // } 
+// function deleteItem(a) {
+//     console.log(a)
+// }
 </script>
+<style>
+    body{
+        background-color: yellow;
+    }
+    img{
+        width: 50px;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: inherit;
+    }
+</style>
+</html>

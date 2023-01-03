@@ -7,7 +7,7 @@
     <title>Game Đoán Số nhưng Không có thưởng</title>
 </head>
 <body>
-    <h1>Game Đoán Số không thưởngs</h1><br>
+    <h1>Game Đoán Số không thưởng</h1><br>
     <input type="button" value="Giỏi thì vào chơi" onclick="guessNumber()">
     <h1 id="xuat"></h1>
 </body>
@@ -15,17 +15,17 @@
 function guessNumber() {
     var num = Math.round(Math.random() * 100);
     var doan;
+    console.log(num);
     do {
         doan = Number(prompt('Nhập số bạn muốn đoán:'));
         if (doan == num) {
             alert("Bạn đã đoán trúng rồi đó ❤!!!");
             xuat.innerHTML = "Chiến Thắng rồi đó!!!";
         } else if (doan > num) {
-            alert("Số bạn đoán lớn hơn số bí mật mất rồi. Hãy nhập lại!😆");
+            alert("Hãy nhập lại!😆Lêu lêu😝");
         } else {
-            alert("Số bạn đoán nhỏ hơn số bí mật mất rồi. Hãy nhập lại!😆");
+            alert("Hãy nhập lại!😆Lêu lêu😝");
         }
-        
     } while (num != doan);
 }
 </script>

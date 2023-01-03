@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+</body>
+<script>
+    var mang = [-3, 5, 1, 3, 2, 10];
+    var a = 0;
+    var b = mang.length - 1;
+    // mang.reverse();
+   
+    while (a < b) {
+        let c = mang[a];
+        mang[a] = mang[b];
+        mang[b] = c;
+        a++;
+        b--;
+    }
+    console.log(mang);
+</script>
+</html>
